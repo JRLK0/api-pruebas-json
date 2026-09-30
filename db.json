@@ -1,0 +1,17 @@
+{
+  "users": [
+    { "id": 1, "name": "Ana Demo", "email": "ana@example.com", "active": true },
+    { "id": 2, "name": "Luis Demo", "email": "luis@example.com", "active": true },
+    { "id": 3, "name": "Marta Demo", "email": "marta@example.com", "active": false }
+  ],
+  "products": [
+    { "id": 1, "name": "Teclado", "category": "accesorios", "price": 29.9, "stock": 12 },
+    { "id": 2, "name": "Raton", "category": "accesorios", "price": 14.5, "stock": 0 },
+    { "id": 3, "name": "Monitor", "category": "pantallas", "price": 189, "stock": 5 }
+  ],
+  "orders": [
+    { "id": 1, "userId": 1, "productId": 1, "quantity": 2, "total": 59.8, "status": "delivered" },
+    { "id": 2, "userId": 2, "productId": 3, "quantity": 1, "total": 189, "status": "pending" },
+    { "id": 3, "userId": 1, "productId": 2, "quantity": 1, "total": 14.5, "status": "cancelled" }
+  ]
+}
