@@ -18,6 +18,9 @@ https://my-json-server.typicode.com/JRLK0/api-pruebas-json
 | --- | --- |
 | `/users` | Tres usuarios con nombre, email ficticio y estado activo |
 | `/users/1` | Un usuario por ID |
+| `/users?name=Ana Demo` | Usuario cuyo nombre coincide exactamente |
+| `/users?q=ana` | Búsqueda de texto en los campos del usuario |
+| `/users?active=true` | Usuarios activos |
 | `/products` | Tres productos con categoría, precio y stock |
 | `/products/1` | Un producto por ID |
 | `/orders` | Tres pedidos en distintos estados |
@@ -38,6 +41,8 @@ Leer una lista, un elemento y un filtro:
 
 ```bash
 curl "$BASE/users"
+curl "$BASE/users?q=ana"
+curl "$BASE/users?name=Ana%20Demo"
 curl "$BASE/products/1"
 curl "$BASE/orders?userId=1"
 ```
